@@ -1,0 +1,102 @@
+section#movies-section {
+  background: red;
+  height: 454px;
+  width: 90%;
+  margin: -60px auto 60px auto;
+  border-radius: 50px;
+  background: linear-gradient(95.04deg, #181818 7.27%, #151515 99.21%);
+}
+
+section #movies-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+section #movies-container .movie-card {
+  margin-top: -92px;
+}
+
+section #movies-container .movie-card .movie-poster {
+  width: 382px;
+  height: 364px;
+  object-fit: contain;
+}
+
+section #movies-container .movie-card .movie-name {
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+  margin: 20px 0 15px 0;
+}
+
+section #movies-container .movie-card .movie-info {
+  font-family: Jost;
+  font-weight: 400;
+  color: #999999;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+section #movies-container .movie-card .movie-info span {
+  font-family: Jost;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  line-height: 26px;
+}
+
+section #movies-container .movie-card .movie-info span img {
+  height: 14px;
+  width: 14px;
+}
+
+section #movies-container .movie-card .movie-types span {
+  font-family: Jost;
+  size: 14px;
+  color: #999999;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  section#movies-section {
+    margin: -30px auto 60px auto;
+    height: 354px;
+  }
+
+  section #movies-container .movie-card {
+    margin-top: -52px;
+  }
+
+  section #movies-container .movie-card .movie-poster {
+    width: 232px;
+    height: 214px;
+  }
+
+  section #movies-container .movie-card .movie-name {
+    font-size: 25px;
+  }
+
+  section #movies-container .movie-card .movie-info {
+    gap: 10px;
+  }
+
+  section #movies-container .movie-card .movie-info span {
+    gap: 3px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  section #movies-container .movie-card .movie-info span img {
+    height: 14px;
+    width: 14px;
+  }
+
+  section #movies-container .movie-card .movie-types span {
+    size: 12px;
+    line-height: 16px;
+  }
+}

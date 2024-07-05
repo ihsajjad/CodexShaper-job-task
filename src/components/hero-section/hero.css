@@ -2,6 +2,7 @@ header {
   width: 100vw;
   height: 100vh;
   color: white;
+  position: relative;
 }
 
 header #greadient-bg {
@@ -10,6 +11,7 @@ header #greadient-bg {
   background: linear-gradient(to right, #080018, #ff2929, #ffb21c);
   position: absolute;
   z-index: -2;
+  bottom: 0;
 }
 
 header #content-container {
@@ -83,6 +85,7 @@ header #content-container #image-container img {
   height: 90%;
   position: absolute;
   bottom: 0;
+  z-index: -1;
 }
 
 /* ==================================== Content styles ====================================*/
@@ -265,8 +268,8 @@ header #content-container #right #route-btns button:hover span {
   }
 
   header #content-container #content #hero-title {
-    font-size: 95px;
-    line-height: 100px;
+    font-size: 75px;
+    line-height: 80px;
   }
 
   header #content-container #content #hero-info > div {
@@ -276,6 +279,11 @@ header #content-container #right #route-btns button:hover span {
 
   header #content-container #content #hero-info > div > span {
     font-size: 16px;
+  }
+
+  header #content-container #content #hero-para {
+    font-size: 22px;
+    margin: 20px 0;
   }
 
   header #content-container #right #route-btns {
