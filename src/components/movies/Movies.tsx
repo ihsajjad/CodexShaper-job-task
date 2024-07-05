@@ -1,7 +1,7 @@
-import { movies } from "../../app.config";
 import star from "../../assets/icons/fill-star.png";
 import fourK from "../../assets/icons/round-4k.png";
 import clock from "../../assets/icons/time-circle.png";
+import { movies } from "../../data.config";
 import "./movies.css";
 
 export interface MovieType {
@@ -16,6 +16,7 @@ const Movies = () => {
   return (
     <section id="movies-section">
       <div id="movies-container">
+        {/* movies are comming form ../../data.config.ts */}
         {movies.map((movie: MovieType) => (
           <div className="movie-card">
             <img src={movie.poster} alt={movie.name} className="movie-poster" />

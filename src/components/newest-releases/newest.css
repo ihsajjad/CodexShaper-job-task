@@ -1,0 +1,79 @@
+#newest-movies-section #section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+#newest-movies-section #section-header h2 {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 60px;
+  color: white;
+}
+
+#newest-movies-section #section-header h2 > img {
+  width: 20px;
+  margin-left: 20px;
+}
+
+#newest-movies-section #section-header #btns {
+  display: flex;
+  gap: 11px;
+}
+
+#newest-movies-section #section-header #btns #left-arrow-btn,
+#newest-movies-section #section-header #btns #right-arrow-btn {
+  width: 54.4px;
+  height: 54.4px;
+  background: white;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#newest-movies-section #section-header #btns #left-arrow-btn:hover,
+#newest-movies-section #section-header #btns #right-arrow-btn:hover {
+  background: linear-gradient(
+    92.28deg,
+    #5a0dff 0%,
+    #ff29b8 38.6%,
+    #ff581c 97.73%
+  );
+}
+
+#newest-movies-section #section-header #btns #left-arrow-btn:hover img,
+#newest-movies-section #section-header #btns #right-arrow-btn:hover img {
+  opacity: 1;
+}
+
+#newest-movies-section #section-header #btns button::after {
+  content: "";
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#newest-movies-section #section-header #btns button span {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#newest-movies-section #section-header #btns button img {
+  width: 22px;
+  opacity: 0.9;
+  z-index: 2;
+}
