@@ -1,29 +1,34 @@
-#newest-movies-section #section-header {
+#newest-movies {
+  padding: 0 !important;
+}
+
+#newest-movies #section-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 80px;
 }
 
-#newest-movies-section #section-header h2 {
+#newest-movies #section-header h2 {
   font-size: 50px;
   font-weight: 900;
   line-height: 60px;
   color: white;
 }
 
-#newest-movies-section #section-header h2 > img {
+/* =========================== section header styles ============================ */
+#newest-movies #section-header h2 > img {
   width: 20px;
   margin-left: 20px;
 }
 
-#newest-movies-section #section-header #btns {
+#newest-movies #section-header #btns {
   display: flex;
   gap: 11px;
 }
 
-#newest-movies-section #section-header #btns #left-arrow-btn,
-#newest-movies-section #section-header #btns #right-arrow-btn {
+#newest-movies #section-header #btns #left-arrow-btn,
+#newest-movies #section-header #btns #right-arrow-btn {
   width: 54.4px;
   height: 54.4px;
   background: white;
@@ -36,8 +41,8 @@
   overflow: hidden;
 }
 
-#newest-movies-section #section-header #btns #left-arrow-btn:hover,
-#newest-movies-section #section-header #btns #right-arrow-btn:hover {
+#newest-movies #section-header #btns #left-arrow-btn:hover,
+#newest-movies #section-header #btns #right-arrow-btn:hover {
   background: linear-gradient(
     92.28deg,
     #5a0dff 0%,
@@ -46,12 +51,12 @@
   );
 }
 
-#newest-movies-section #section-header #btns #left-arrow-btn:hover img,
-#newest-movies-section #section-header #btns #right-arrow-btn:hover img {
+#newest-movies #section-header #btns #left-arrow-btn:hover img,
+#newest-movies #section-header #btns #right-arrow-btn:hover img {
   opacity: 1;
 }
 
-#newest-movies-section #section-header #btns button::after {
+#newest-movies #section-header #btns button::after {
   content: "";
   width: 50%;
   height: 50%;
@@ -61,7 +66,7 @@
   right: 0;
 }
 
-#newest-movies-section #section-header #btns button span {
+#newest-movies #section-header #btns button span {
   width: 50px;
   height: 50px;
   background-color: black;
@@ -72,8 +77,146 @@
   justify-content: center;
 }
 
-#newest-movies-section #section-header #btns button img {
+#newest-movies #section-header #btns button img {
   width: 22px;
   opacity: 0.9;
   z-index: 2;
+}
+
+/* ============================== latest movies styles ============================= */
+
+#newest-movies #movies-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 40px 0 60px 0;
+}
+
+#movies-container .latest-movie-card {
+  width: 307px;
+  height: 360px;
+  position: relative;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+#movies-container .latest-movie-card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#movies-container .latest-movie-card .card-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -1000px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: left;
+  padding: 0 0 30px 30px;
+}
+
+.latest-movie-card:hover {
+  transform: scale(1.2);
+  z-index: 100;
+}
+
+.latest-movie-card:hover .card-content {
+  inset: 0;
+}
+
+.latest-movie-card .card-content .event-btns {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.latest-movie-card .card-content .event-btns .play-btn {
+  height: 71px;
+  width: 71px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.27);
+  backdrop-filter: blur(5px);
+}
+
+.latest-movie-card .card-content .event-btns .play-btn > img {
+  width: 21px;
+}
+
+.latest-movie-card .card-content .event-btns > div {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.latest-movie-card .card-content .event-btns > div button {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid !important;
+  border-image-source: linear-gradient(
+    137.17deg,
+    rgba(240, 240, 240, 0.2) 15.35%,
+    rgba(155, 155, 155, 0) 87.27%
+  ) !important;
+}
+
+.latest-movie-card .card-content .event-btns > div button:hover {
+  background: linear-gradient(
+    92.28deg,
+    #5a0dff 0%,
+    #ff29b8 38.6%,
+    #ff581c 97.73%
+  );
+}
+
+.latest-movie-card .card-content .event-btns > div button img {
+  width: 12px;
+}
+
+.latest-movie-card .movie-name {
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+  line-height: 35px;
+}
+
+.latest-movie-card .movie-info {
+  font-family: Jost;
+  font-weight: 400;
+  color: #999999;
+  display: flex;
+  gap: 15px;
+}
+
+.latest-movie-card .movie-info span {
+  font-family: Jost;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  line-height: 26px;
+}
+
+.latest-movie-card .movie-info span img {
+  height: 14px;
+  width: 14px;
+}
+
+.latest-movie-card .movie-types span {
+  font-family: Jost;
+  size: 14px;
+  color: #999999;
+  line-height: 20px;
 }
