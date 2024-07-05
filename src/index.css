@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Big Shoulders Display;
+}
+
 :root {
   --primary-bg: #040303;
 }
@@ -6,6 +16,7 @@ body {
   background-color: var(--primary-bg);
 }
 
+/* ================================ Common styles ================================ */
 .primary-btn {
   height: 60px;
   display: flex;
@@ -23,6 +34,17 @@ body {
 
 .icon-btn {
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(240, 240, 240, 0.3);
   border: 1px solid #e2e2e2;
 }
+
+#content-container,
+section,
+nav {
+  padding: 0 50px;
+}
+
+button {
+  font-weight: 700;
+}
+/* ================================ Home Page Styles ============================== */

@@ -18,7 +18,7 @@ const NavBar = () => {
       <div id="right-content">
         <button id="subscribe-btn" className="primary-btn">
           <img src={premium} alt="" />
-          Subscribe
+          SUBSCRIBE
         </button>
 
         <button id="profile-btn" className="icon-btn">

@@ -1,9 +1,9 @@
-import NavBar from "./components/nab-bar/NavBar";
+import Hero from "./components/hero-section/Hero";
 
 const Home = () => {
   return (
     <main className="">
-      <NavBar />
+      <Hero />
     </main>
   );
 };
