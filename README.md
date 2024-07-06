@@ -6,24 +6,24 @@ This project is a conversion of a Figma design into a functional HTML template u
 
 ## Project Structure
 
-The project structure follows the standard React application setup: 
-/project-root
-├── public
-│ ├── index.html
-│ └── ...
-├── src
-│ ├── assets
-│ │ └── ...
-│ ├── components
-│ │ └── ...
-│ ├── data.config.ts
-│ ├── Home.tsx
-│ ├── main.tsx
-│ ├── index.html
-│ └── index.css
-├── .gitignore
-├── package.json
-├── tsconfig.json
+The project structure follows the standard React application setup: <br /> 
+/project-root <br />
+├── public <br />
+│ ├── index.html <br />
+│ └── ... <br />
+├── src <br />
+│ ├── assets <br />
+│ │ └── ... <br />
+│ ├── components <br />
+│ │ └── ... <br />
+│ ├── data.config.ts <br />
+│ ├── Home.tsx <br />
+│ ├── main.tsx <br />
+│ ├── index.html <br />
+│ └── index.css <br />
+├── .gitignore <br />
+├── package.json <br />
+├── tsconfig.json <br />
 └── README.md
 
 ## Technologies Used
