@@ -110,7 +110,6 @@
 }
 
 #movies-container .latest-movie-card .card-content {
-  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -222,4 +221,10 @@
   size: 14px;
   color: #999999;
   line-height: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  #movies-container .latest-movie-card .card-content {
+    padding: 0 0 5px 5px;
+  }
 }

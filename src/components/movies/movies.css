@@ -1,10 +1,12 @@
 section#movies-section {
-  background: red;
   height: 454px;
-  width: 90%;
+  width: 95%;
   margin: -60px auto 60px auto;
   border-radius: 50px;
   background: linear-gradient(95.04deg, #181818 7.27%, #151515 99.21%);
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 section #movies-container {
