@@ -86,10 +86,13 @@
 /* ============================== latest movies styles ============================= */
 
 #newest-movies #movies-container {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   gap: 20px;
-  margin: 40px 0 60px 0;
+  padding: 40px 0 60px 0;
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  flex-wrap: nowrap;
 }
 
 #movies-container .latest-movie-card {

@@ -95,6 +95,7 @@ header #content-container #content {
   flex-direction: column;
   justify-content: center;
   padding-left: 50px;
+  z-index: -1;
 }
 
 header #content-container #content #hero-title {
