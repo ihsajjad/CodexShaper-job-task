@@ -6,7 +6,7 @@ This project is a conversion of a Figma design into a functional HTML template u
 
 ## Project Structure
 
-The project structure follows the standard React application setup:
+The project structure follows the standard React application setup: 
 /project-root
 ├── public
 │ ├── index.html
@@ -25,7 +25,6 @@ The project structure follows the standard React application setup:
 ├── package.json
 ├── tsconfig.json
 └── README.md
-
 
 ## Technologies Used
 
