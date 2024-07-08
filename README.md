@@ -69,6 +69,9 @@ The application should now be running on `http://localhost:5173`.
 
 For any questions or concerns, feel free to reach out:
 
+
+
+- **Live link**: [Live link](https://holaa360.netlify.app)
 - **Email**: iftekherhossensajjad@gmail.com
 - **LinkedIn**: [Iftekher Hossen Sajjad](https://www.linkedin.com/in/ih-sajjad)
 
